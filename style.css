@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-
+    
 body {
     background: #191919;
 }
@@ -47,8 +47,17 @@ body {
     margin: 10% auto;
 }
 
-#backButton #nextButton {
-    width: 50px;
+#backButton, #nextButton {
+    width: 60px;
     cursor: pointer;
     margin: 40px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#backButton:hover, #nextButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: Opacity 0.5s ease, transform 0.5s ease;
 }
